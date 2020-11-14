@@ -23,7 +23,7 @@ class Location(models.Model):
     location_of_pic = models.CharField(max_length=50)
 
     def __str__(self):
-        self.location_of_pic
+        return self.location_of_pic
     
     def save_location(self):
         self.save()
@@ -32,6 +32,11 @@ class Location(models.Model):
         self.delete()
     
     @classmethod
+    def locations(cls):
+        locations = cls.objects.all()
+        return locations
+
+    @classmethod
     def update_location(cls,id,new_location):
         cls.objects.filter(id=id).update(location_of_pic=new_location)
 
@@ -39,13 +44,19 @@ class Category(models.Model):
     category_of_pic = models.CharField(max_length=50)
 
     def __str__(self):
-        self.category_of_pic
+        return self.category_of_pic
+        
     
     def save_category(self):
         self.save()
     
     def delete_category(self):
         self.delete()
+    
+    @classmethod
+    def categories(cls):
+        categories = cls.objects.all()
+        return categories
     
     @classmethod
     def update_category(cls,id,new_category):

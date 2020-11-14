@@ -2,5 +2,18 @@
 
 {% block content %}
 {{ block.super}}
+<div class="container">
+    {% for photo in photos %}
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="{{photo.image.url}}" class="img-responsive" alt="Image" style="width: 300px;">
+            <h4>{{photo.name}} in {{photo.category}}</h4>
+            <h4>{{photo.description}}</h4>
+            <h4>{{photo.location}}</h4>
 
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
