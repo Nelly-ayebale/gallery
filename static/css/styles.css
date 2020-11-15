@@ -3,3 +3,10 @@ h1{
     text-decoration: underline;
     color: black;
 }
+body{
+    background-image: url(../css/images/rose.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: cyan; */
+    
+}
