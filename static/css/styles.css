@@ -4,9 +4,10 @@ h1{
     color: black;
 }
 body{
-    background-image: url(../css/images/rose.jpg);
+    /* background-image: url(../css/images/rose.jpg); */
     background-repeat: no-repeat;
     background-position: center;
-    /* background-color: cyan; */
+    /* height: auto; */
+    background-color: cyan;
     
 }
