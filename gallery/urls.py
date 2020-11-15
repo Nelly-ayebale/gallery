@@ -19,6 +19,6 @@ from pictures import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.photos,name='photos')
+    path('',views.photos,name='photos'),
     path('search/',views.search_results,name='search_results')
 ]

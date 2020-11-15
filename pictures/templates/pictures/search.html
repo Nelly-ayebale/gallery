@@ -16,7 +16,7 @@
         {% if photos %}
         {% for photo in photos %}
         <div class="col-sm-6 col-md-3">
-            <h1>{{photo.image.url}}</h1>
+            <img src="{{photo.image.url}}" class="img-responsive" alt="Image" style="width: 300px;">
         </div>
         {% endfor %}
         {% endif %}
