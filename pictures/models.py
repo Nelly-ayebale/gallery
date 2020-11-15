@@ -18,6 +18,11 @@ class Photo(models.Model):
     def photos(cls):
         photos = cls.objects.all()
         return photos
+    
+    @classmethod
+    def search_by_category(cls,search_term):
+        photos = cls.objects.filter(category__icontains=search_term)
+        return photos
 
 class Location(models.Model):
     location_of_pic = models.CharField(max_length=50)
