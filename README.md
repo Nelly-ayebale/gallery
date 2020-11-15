@@ -1,4 +1,4 @@
-# ![Gallery](https://nellys-gallery.herokuapp.com/)
+# [Gallery](https://nellys-gallery.herokuapp.com/)
 # Gallery
 <table>
 <tr>
