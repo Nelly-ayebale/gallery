@@ -11,18 +11,36 @@ class Photo(models.Model):
     def __str__(self):
         return self.name
 
-    def save_photo(self):
+    def save_image(self):
         self.save()
     
+    def delete_image(self):
+        self.delete()
+
     @classmethod
     def photos(cls):
         photos = cls.objects.all()
         return photos
     
     @classmethod
+    def update_image(cls, id, image):
+        cls.objects.filter(id=id).update(image=image)
+
+    
+    @classmethod
     def search_by_category(cls,search_term):
         photos = cls.objects.filter(category__category_of_pic__icontains=search_term)
         return photos
+    
+    @classmethod
+    def filter_by_location(cls,location):
+        photo_location = Photo.objects.filter(location__location_of_pic=location)
+    
+    @classmethod
+    def get_image_by_id(cls, id):
+        photos = cls.objects.filter(id=id).all()
+        return photos
+
 
 class Location(models.Model):
     location_of_pic = models.CharField(max_length=50)

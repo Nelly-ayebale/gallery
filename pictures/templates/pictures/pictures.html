@@ -3,17 +3,20 @@
 {% block content %}
 {{ block.super}}
 <div class="container">
-    {% for photo in photos %}
+
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <img src="{{photo.image.url}}" class="img-responsive" alt="Image" style="width: 300px;">
-            <h4>{{photo.name}} in {{photo.category}}</h4>
-            <h4 style="font-weight: bolder;">{{photo.description}}</h4>
-            <h4>{{photo.location}}</h4>
-            <h4>{{photo.image.url}}</h4>
+        {% for photo in photos %}
+        <div class="col-sm-3 col-md-3">
+            <img src="{{photo.image.url}}" class="img-responsive p-3" alt="Image" style="width: 290px; height: 230px;">
+            <h5 class="pl-3" style="font-weight: bolder;">{{photo.name}}</h5>
+            <h4 class="pl-3">Category:<strong>{{photo.category}}</strong></h4>
+            <!-- <p style="font-weight: bolder;" class="pl-3">{{photo.description}}</p> -->
+            <h4 class="pl-3" style="font-weight: bolder;">{{photo.location}}</h4>
+
         </div>
+        {% endfor %}
 
     </div>
-    {% endfor %}
+
 </div>
 {% endblock %}
