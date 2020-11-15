@@ -1,4 +1,4 @@
-# ![Gallery]
+# ![Gallery](https://nellys-gallery.herokuapp.com/)
 # Gallery
 <table>
 <tr>
@@ -8,7 +8,7 @@
 </tr>
 </table>
 
-## [Usage] 
+## [Usage](https://nellys-gallery.herokuapp.com/)
 
 ### Development
 Want to contribute? Great!
