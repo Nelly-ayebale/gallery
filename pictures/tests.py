@@ -46,6 +46,9 @@ class CategoryTestClass(TestCase):
         self.assertTrue(len(categories) > 0)
     
     
+
+    
+    
 class PhotoTestClass(TestCase):
     def setUp(self):
         self.Kampala = Location(location_of_pic='Kampala')
