@@ -43,6 +43,8 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - The application should display the name,category and location of the image.
 - The application should display a larger size of the image and its details when clicked on the View Image Details.
 
+## Figma Blueprint
+[here](https://www.figma.com/file/Yf9SSRGGwye4snQXxBHvwd/Gallery?node-id=1%3A2)
 
 [MIT](LICENSE) ©
 
